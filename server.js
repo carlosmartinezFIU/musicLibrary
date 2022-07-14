@@ -137,9 +137,6 @@ app.post('/logout', async (req,res) => {
         res.status(500).json({message: "Already logged out"})
     }
 
-    
-    
-
 })
 
 
