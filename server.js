@@ -36,6 +36,7 @@ app.use(cors({
     methods: ['POST', 'PUT', 'GET', 'OPTIONS', 'DELETE']
 }))
 app.use(express.urlencoded({ extended: true }));
+//origin: [process.env.PORT, 'https://musiclibrary99.herokuapp.com'], 
 
 // used to connect a new session to he postgresdatabase
 const newPool = new Pool({
@@ -51,7 +52,7 @@ const newPool = new Pool({
 const sessionConfig = {
     store: new pgSession({
         pool: newPool,
-        tableName: 'session',
+        createTableIfMissing: true,
     }),
     secret: process.env.COOKIE_SECRET, //used to encrypt the cookie 
     resave: false,                     // set to flase - forces session to be saved back to the session store
@@ -78,8 +79,9 @@ app.post('/sign-up', async (req,res) => {
     if(!result.length)
     {
        const hash = await bcrypt.hash(user_password,10)
-       await pool.query('INSERT INTO profiles (profile_email, profile_password) VALUES($1, $2)', [user_email, hash]);
-       req.session.user = resultUser[0].profile_id;
+       const signUpResult = await pool.query('INSERT INTO profiles (profile_email, profile_password) VALUES($1, $2) RETURNING *', [user_email, hash]);
+       req.session.user = signUpResult.rows[0].profile_id;
+       
 
        return res.json("False")
     }
