@@ -15,11 +15,11 @@ const config = {
   ssl: {rejectUnauthorized: false}
 };
 
-const pool2 = new Pool(config);
-exports.pool2 = pool2
+const pool = new Pool(config);
+module.exports = pool
 
 
-
+/*
 const devConfig = {
     user: process.env.PG_USER,
     password: process.env.PG_PASSWORD,
@@ -39,3 +39,5 @@ const proConfig = {
 const pool = new Pool(process.env.NODE_ENV === 'production' ? proConfig : devConfig);
 
 exports.pool = pool;
+
+*/

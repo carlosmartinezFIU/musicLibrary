@@ -3,7 +3,6 @@ const axios = require('axios');
 const cors = require('cors');
 require('dotenv').config();
 const pool = require('./db')
-const pool2 = require('./db')
 const multer = require('multer');
 const bcrypt = require('bcrypt')
 const session = require('express-session')
@@ -53,7 +52,7 @@ const newPool = new Pool({
 // Session needed to track user 
 const sessionConfig = {
     store: new pgSession({
-        pool: pool2,
+        pool: pool,
         tableName: 'session',
     }),
     secret: process.env.COOKIE_SECRET, //used to encrypt the cookie 
