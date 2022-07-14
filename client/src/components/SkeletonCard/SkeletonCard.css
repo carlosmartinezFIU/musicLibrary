@@ -1,0 +1,79 @@
+.skeleton-two-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.album-wrapper{
+    width: 230px;
+    height: 350px;
+}
+
+.img-skeleton{
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+    height: 200px;
+}
+
+.bottom-skeleton{
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.song-list-skeleton-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+}
+
+
+/********** Search Skeleton ********************************************/
+
+.search-skeleton-wrapper{
+    width: 200px;
+}
+
+.image-search-container{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+.bottom-search-container{
+    width: 200px;
+    margin: auto;
+    margin-top: 16px;
+}
+
+
+/************* Artist Search Skeleton *********************/
+.artist-wrapper-search{
+    width: 200px;
+    margin-left: 21px;
+}
+
+.image-query-container{
+    height: 200px;
+    margin-top: 13px;
+    width: 200px;
+}
+
+.bottom-query-container{
+    margin-top: 11px;
+}
+
+.song-track-list-skeleton{
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+
+.skeleton-song-container{
+    height: 51px;
+    margin-left: 2rem;
+}
+
+

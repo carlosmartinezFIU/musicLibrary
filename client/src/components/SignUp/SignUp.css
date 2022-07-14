@@ -1,0 +1,82 @@
+.sign-up-wrapper{
+    width: 100%;
+    height: 100vh;
+}
+
+.top-sign-up-container{
+    height: 190px;
+}
+
+.title-container{
+    width: 400px;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 110px;
+    font-size: 25px;
+}
+
+.create-account-title{
+    margin: 0px
+}
+
+.sign-up-container{
+    border: 1px white solid;
+    width: 450px;
+    margin: auto;
+      margin-top: auto;
+    margin-top: 27px;
+    height: 401px; 
+}
+
+.input-username, .input-password{
+    position: relative;
+    margin: auto;
+    margin-top: auto;
+    width: 255px;
+    height: 31px;
+    padding: 4px;
+}
+.input-username{
+    margin-top: 136px;
+}
+.input-password{
+    margin-top: 36px;
+}
+
+.user-signup-form{
+    text-align: center;
+}
+
+.sign-up-btn{
+    width: 150px;
+    height: 37px;
+    border-radius: 14px
+}
+
+.wrong-email-sign{
+    color: red;
+    position: relative;
+    top: 42px;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+}
+
+.sign-up-login-btn-container{
+    width: 330px;
+    margin: auto;
+    margin-top: auto;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.error-message-sign{
+    margin: auto;
+    width: 300px;
+    position: relative;
+    top: 54px;
+    color: red;
+}

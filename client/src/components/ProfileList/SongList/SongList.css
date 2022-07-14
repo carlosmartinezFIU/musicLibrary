@@ -1,0 +1,63 @@
+.song-list-container{
+    display: flex;
+    background-color: #293036;
+    margin-bottom: 12px;
+    justify-content: space-between;
+}
+
+.track-number-song-list{
+    margin-left: 0px;
+    width: auto;
+    height: 19px;
+}
+
+.track-duration-song-list{
+
+}
+
+.number-name-one-container-song{
+    display: flex;
+}
+
+.duration-two-container-song{
+    display: flex;
+    width: 131px;
+    justify-content: space-between;
+    margin-right: 2rem;
+    align-items: center;
+}
+
+.delete-btn-song-list{
+    height: 29px;
+    width: 62px;
+    background: #F94C66;
+    border: none;
+    border-radius: 23px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.track-name-artist-song-list-container{
+    margin-left: 24px;
+}
+
+.track-name-song-list{
+    margin-bottom: 0px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #00ffab;
+}
+
+.track-artist-song-list{
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+.track-list-number-container{
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+    width: 13px;
+}
+
+
