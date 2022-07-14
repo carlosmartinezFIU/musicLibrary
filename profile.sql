@@ -26,3 +26,10 @@ CREATE TABLE album(
     profile_id INT NOT NULL,
     FOREIGN KEY (profile_id) REFERENCES profiles(profile_id) 
 );
+
+
+CREATE TABLE session(
+    sid CHARACTER VARYING PRIMARY KEY NOT NULL,
+    sess json NOT NULL,
+    expire timestamp(6) without time zone NOT NULL
+);

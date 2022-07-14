@@ -52,7 +52,7 @@ const newPool = new Pool({
 const sessionConfig = {
     store: new pgSession({
         pool: newPool,
-        createTableIfMissing: true,
+        tableName: 'session',
     }),
     secret: process.env.COOKIE_SECRET, //used to encrypt the cookie 
     resave: false,                     // set to flase - forces session to be saved back to the session store
@@ -81,6 +81,9 @@ app.post('/sign-up', async (req,res) => {
        const hash = await bcrypt.hash(user_password,10)
        const signUpResult = await pool.query('INSERT INTO profiles (profile_email, profile_password) VALUES($1, $2) RETURNING *', [user_email, hash]);
        req.session.user = signUpResult.rows[0].profile_id;
+
+       await pool.query('INSERT INTO session (sid, sess, expire) VALUES($1,$2,$3)', [req.sessionID, req.session, req.session.cookie.expires])
+       console.log(req.session.cookie)
        
 
        return res.json("False")
