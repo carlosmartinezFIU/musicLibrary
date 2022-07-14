@@ -31,7 +31,7 @@ const { unlink } = require('fs-extra');
 const app = express();
 app.use(express.json());
 app.use(cors({ 
-    origin: ['http://localhost:5000', 'http://localhost:3000'], 
+    origin: [process.env.PORT, 'https://musiclibrary99.herokuapp.com'], 
     credentials: true,
     methods: ['POST', 'PUT', 'GET', 'OPTIONS', 'DELETE']
 }))
