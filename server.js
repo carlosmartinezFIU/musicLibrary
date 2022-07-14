@@ -51,7 +51,7 @@ const newPool = new Pool({
 const sessionConfig = {
     store: new pgSession({
         pool: newPool,
-        createTableIfMissing: true,
+        tableName: 'session',
     }),
     secret: process.env.COOKIE_SECRET, //used to encrypt the cookie 
     resave: false,                     // set to flase - forces session to be saved back to the session store
