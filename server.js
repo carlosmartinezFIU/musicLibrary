@@ -2,7 +2,8 @@ const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
 require('dotenv').config();
-const {pool, pool2} = require('./db')
+const pool = require('./db')
+const pool2 = require('./db')
 const multer = require('multer');
 const bcrypt = require('bcrypt')
 const session = require('express-session')
