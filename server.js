@@ -82,7 +82,7 @@ app.post('/sign-up', async (req,res) => {
        const signUpResult = await pool.query('INSERT INTO profiles (profile_email, profile_password) VALUES($1, $2) RETURNING *', [user_email, hash]);
        req.session.user = signUpResult.rows[0].profile_id;
 
-       await pool.query('INSERT INTO session (sid, sess, expire) VALUES($1,$2,$3)', [req.sessionID, req.session.cookie, req.session.cookie.expires])
+       await pool.query('INSERT INTO session (sid, sess, expire) VALUES($1,$2,$3)', [req.sessionID, req.session, req.session.cookie.expires])
        console.log(req.session.cookie)
        
 
