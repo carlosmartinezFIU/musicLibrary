@@ -10,6 +10,7 @@ const pgSession = require('connect-pg-simple')(session)
 const Pool = require('pg').Pool
 const fs = require('fs-extra');
 const util = require('util');
+const path = require('path');
 
 const unlinkFile = util.promisify(fs.unlink)
 
