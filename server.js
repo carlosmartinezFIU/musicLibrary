@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
 require('dotenv').config();
-const pool = require('./db')
+const {pool, pool2} = require('./db')
 const multer = require('multer');
 const bcrypt = require('bcrypt')
 const session = require('express-session')
@@ -11,6 +11,7 @@ const Pool = require('pg').Pool
 const fs = require('fs-extra');
 const util = require('util');
 const path = require('path');
+const PORT = process.env.PORT || 5000;
 
 const unlinkFile = util.promisify(fs.unlink)
 
@@ -43,7 +44,7 @@ const newPool = new Pool({
     user: process.env.PG_USER,
     password: process.env.PG_PASSWORD,
     host: process.env.PG_HOST,
-    port: process.env.PG_PORT,
+    port: process.env.PORT,
     database: process.env.PG_DATABASE
 })
 
@@ -51,7 +52,7 @@ const newPool = new Pool({
 // Session needed to track user 
 const sessionConfig = {
     store: new pgSession({
-        pool: newPool,
+        pool: pool2,
         tableName: 'session',
     }),
     secret: process.env.COOKIE_SECRET, //used to encrypt the cookie 
@@ -453,7 +454,6 @@ if(process.env.NODE_ENV === "production"){
 
 
 
-const PORT = process.env.PORT || 5000;
 app.listen(PORT, ()=>{
     console.log(`Running on PORT ${PORT}`);
 })
