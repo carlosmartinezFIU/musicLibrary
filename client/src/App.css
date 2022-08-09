@@ -3,6 +3,10 @@
   
 }
 
+btn{
+  color: #000;
+}
+
 /**
 height: 100vh;
   background-image: linear-gradient(to bottom right, rgba(255,255,255,0.2), rgba(255,255,255,0));

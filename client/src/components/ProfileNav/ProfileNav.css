@@ -141,4 +141,13 @@ img{
         left: -14px
     }
 
+    .navbar-lower-container{
+        z-index: 1;
+        position: relative;
+        top: -50px;
+    }
+
+    .drop-down-menu{
+        margin-right: 20px;
+    }
 }

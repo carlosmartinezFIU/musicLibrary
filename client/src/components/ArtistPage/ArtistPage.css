@@ -207,5 +207,10 @@
     .add-btn-profile{
         width: 49px;
         height: 26px;
+        color: #000000;
+    }
+
+    .add-album-btn-artist-pg{
+        color: #000000;
     }
 }
