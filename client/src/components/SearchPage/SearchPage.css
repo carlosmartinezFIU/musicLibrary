@@ -105,3 +105,53 @@
     filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(92deg) brightness(101%) contrast(101%);
     cursor: pointer;
 }
+
+@media screen and (max-width: 550px) {
+    .form-wrapper{
+        align-items: center;
+        width: 267px;
+    }
+
+    .form-container{
+        width: 100%;
+        height: 26px;
+    }
+
+    .artist-search-input{
+        width: 100%;
+        height: 100%;
+    }
+
+    .search-artist-btn{
+        right: -14px;
+        top: 10px;
+    }
+
+    .music-cards-display{
+        column-gap: 5px;
+        row-gap: 38px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .photo-card-container{
+        width: 120px;
+    }
+
+    .artist-image-cover-container{
+        width: 110px;
+        height: 110px;
+    }
+
+    .artist-name, .query-type{
+        font-size: 14px;
+    }
+
+    .top-search-page-container{
+        height: 161px;
+    }
+
+    .search-page-home-logo{
+        margin-top: 70px;
+    }
+}

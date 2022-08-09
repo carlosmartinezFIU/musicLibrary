@@ -80,3 +80,17 @@
     top: 54px;
     color: red;
 }
+
+@media screen and (max-width: 550px) {
+    .create-account-title{
+        font-size: 22px;
+    }
+
+    .sign-up-container{
+        width: 98.5%;
+    }
+
+    .sign-up-login-btn-container{
+        color: #000;
+    }
+}

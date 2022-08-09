@@ -146,3 +146,66 @@
     cursor: pointer;
 }
 
+
+
+@media screen and (max-width: 550px) {
+    .mini-nav-artist-page{
+        width: 100%;
+        align-items: baseline;
+    }
+
+    .albums-h1-title{
+        margin-left: 151px;
+    }
+
+    .return-search-btn{
+        font-size: 17px;
+        margin-right: 19px;
+        height: 40px;
+    }
+
+    .album-list-container-artist-page{
+        width: 341px;
+    }
+
+    .album-card-container-artist-page{
+        width: 215px;
+    }
+
+    .image-container-artist-page{
+        width: 175px;
+        height: 175px;
+    }
+
+    .album-description-artist-page{
+        width: 208px;
+    }
+
+    .artist-page-album-name{
+        font-size: 16px;
+        width: 180px;
+        margin-left: 21px;
+    }
+
+    .release-date-add-btn-container{
+        width: 168px;
+    }
+
+    .album-tracklist-container{
+        width: 100%;
+    }
+
+    .track-list-one-container, .track-list-two-container{
+        font-size: 14px;
+    }
+
+    .track-name{
+        width: 160px;
+        overflow: hidden;
+    }
+
+    .add-btn-profile{
+        width: 49px;
+        height: 26px;
+    }
+}

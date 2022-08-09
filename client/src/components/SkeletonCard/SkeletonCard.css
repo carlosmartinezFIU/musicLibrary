@@ -77,3 +77,19 @@
 }
 
 
+@media screen and (max-width: 550px){
+    .search-skeleton-wrapper{
+        width: 120px;
+    }  
+
+    .image-search-container{
+        height: 128px;
+        width: 115px;
+    }
+
+    .bottom-search-container{
+        width: 109px;
+        
+    }
+}
+

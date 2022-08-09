@@ -112,3 +112,33 @@ img{
     width: 83px;
     height: 83px;
 }
+
+@media screen and (max-width: 550px){
+    .navbar-wrapper{
+        height: 161px;
+    }
+
+    .profile-top-right-container{
+        flex-direction: column-reverse;
+    }
+
+    .profile-svg-container{
+        position: relative;
+        top: 17px;
+        left: 143px;
+    }
+
+    .top-left-logo{
+        top: 47px;
+        left: 16px;
+        width: 37px;
+        height: 37px;
+    }
+
+    .start-btn{
+        position: relative;
+        top: -30px;
+        left: -14px
+    }
+
+}

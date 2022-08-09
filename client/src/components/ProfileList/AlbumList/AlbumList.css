@@ -95,3 +95,39 @@
     left: 16px;
     position: absolute;
 }
+
+
+@media screen and (max-width: 550px){
+    .album-list-wrapper-container{
+        flex-direction: column;
+    }
+
+    .album-list-container-one{
+        width: 100%;
+        height: 363px;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .album-card-container-album-list{
+        margin-left: 77px;
+    }
+
+    .album-list-info{
+        text-align: center;
+    }
+
+    .delete-btn-album-list{
+        bottom: 14px;
+        left: 69px;
+    }
+
+    .album-list-container-two{
+        width: 100%;
+    }
+
+    .album-list-song-list-track-number, .album-list-song-list-track-name, 
+    .album-list-song-list-artist, .album-list-duration-track{
+        font-size: 14px;
+    }
+}

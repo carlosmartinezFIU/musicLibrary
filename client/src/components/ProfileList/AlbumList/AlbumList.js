@@ -15,7 +15,6 @@ const AlbumList = () => {
         const getProfileAlbums = async () => {
             try {
                 const result = await axios.get('/profile-album-list')
-                console.log(result.data)
                 setAlbumList(result.data)
                 setIsLoading(false)
             } catch (error) {
