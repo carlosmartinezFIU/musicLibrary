@@ -55,3 +55,10 @@
     margin-left: 18px;
     width: 13px;
 }
+
+
+@media screen and (max-width: 550px) {
+    .delete-btn-song-list{
+        color: #000;
+    }
+}

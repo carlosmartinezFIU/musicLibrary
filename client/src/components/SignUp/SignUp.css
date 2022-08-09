@@ -52,7 +52,8 @@
 .sign-up-btn{
     width: 150px;
     height: 37px;
-    border-radius: 14px
+    border-radius: 14px;
+    color: #000;
 }
 
 .wrong-email-sign{
