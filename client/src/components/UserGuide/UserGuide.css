@@ -36,3 +36,11 @@
     width: 500px;
     font-size: 27px;
 }
+
+@media screen and (max-width: 550px) {
+    .intro-description{
+        width: 100%;
+        font-size: 21px;
+        text-align: center;
+    }
+}
