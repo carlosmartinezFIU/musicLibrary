@@ -22,12 +22,6 @@ Application is responsive as well being used in mobile and desktop.
 Lastly using Socket.IO to send updated like and comment count.
 
 
-## Front Display
-![front-display](front-display.png)
-
-## Full Display
-![full-website-display](full-website-display.png)
-
 ## Sign-up Page
 ![sign-up](sign-up.png)  
 
