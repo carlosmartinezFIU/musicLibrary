@@ -94,4 +94,8 @@
     .sign-up-login-btn-container{
         color: #000;
     }
+
+    .user-signup-form{
+        font-size: 16px;
+    }
 }
